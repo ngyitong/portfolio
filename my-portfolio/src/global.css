@@ -1,0 +1,8 @@
+/* 
+Removes the white margin added by browsers on your background colour
+*/
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
