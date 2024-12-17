@@ -1,8 +1,9 @@
-.App {
-  text-align: center;
+.app{
+  color: #61dafb;
+  /* text-align: center; */
 }
 
-.App-logo {
+.app-logo {
   height: 30vmin;
   pointer-events: none;
 }
@@ -13,25 +14,60 @@
   }
 }
 
-.App-header {
+/*
+Renders the heading
+*/
+.header {
   background-color: #2b0203;
-  /* background-color: linear-gradient(to bottom,#ff8a00, #e52e71); */
+  border-bottom: 4px solid #49090a;
   border-radius: 0px 0px 5px 5px;
   min-height: 10vh;
+  width: 100%; 
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1vmin);
-  color: #ffffff;
+  color: #fff9f9;
 }
 
-.background{
-  background-image: url(./pictures/darknetwork.jpg);
+.footer{
+  background-color: #370304;
+  border-top: 4px solid #49090a;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(8px + 1vmin);
+  position: absolute;
+  color: #fff9f9;
+}
+
+/* Make elements line up in a row */
+.flex-container-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Add a gap between flexboxes */
+  gap: 15px;
+}
+
+/* 
+renders the application background 
+*/
+.background:before {
+  background-image: url(./pictures/landscape.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  font-size: 30px;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
 }
 
 
@@ -39,11 +75,3 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

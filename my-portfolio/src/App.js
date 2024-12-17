@@ -4,16 +4,21 @@ import './global.css';
 function App() {
   return (
     
-    <div className="App">
-      
-      <header className="App-header">
-        <h1>Hello world!</h1>
-      </header>
-
+    <div className="app">
+    
       <div className="background">
 
-      </div>
+        <header className="header">
+          <div className="flex-container-row">
+            <h3>Hello world!</h3> 
+            <h3>Bye worlds!</h3>
+          </div>
+        </header>
 
+        <footer className="footer">
+          <h3>wordss</h3>
+        </footer>
+      </div>
 
     </div>
   );
