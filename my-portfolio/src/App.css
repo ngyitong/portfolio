@@ -1,6 +1,5 @@
 .app{
   color: #61dafb;
-  /* text-align: center; */
 }
 
 .app-logo {
@@ -19,32 +18,34 @@ Renders the heading
 */
 .header {
   background-color: #2b0203;
-  border-bottom: 4px solid #49090a;
-  border-radius: 0px 0px 5px 5px;
+  border-bottom: 2px solid #ffdbdb;
   min-height: 10vh;
   width: 100%; 
   position: fixed;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 1vmin);
   color: #fff9f9;
 }
 
 .footer{
   background-color: #370304;
-  border-top: 4px solid #49090a;
+  border-top: 4px solid #ffdbdb;
   border-radius: 5px 5px 0px 0px;
   padding: 5px;
-  width: 100%;
-  bottom: 0;
+  width: 95%;
+  bottom: 0; left: 0; right: 0;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  font-size: calc(8px + 1vmin);
+  justify-content: left;
+  margin: 0 auto;
   position: absolute;
   color: #fff9f9;
+}
+
+/* create break into a new line if using flexbox*/
+.flex-break{
+  flex-basis: 100%;
+  height: 0;
 }
 
 /* Make elements line up in a row */
@@ -52,12 +53,21 @@ Renders the heading
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* Add a gap between flexboxes */
-  gap: 15px;
+  /* justify-content: flex-end; */
+  align-items: center;
+}
+
+/* Make elements line up in a column */
+.flex-container-col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* 
-renders the application background 
+renders the application background
+:before is used so that opacity only affects the background
 */
 .background:before {
   background-image: url(./pictures/landscape.jpg);
@@ -70,8 +80,41 @@ renders the application background
   opacity: 0.4;
 }
 
+.small-font{
+  color: #ffffff;
+  font-size: calc(3px + 1vmin);
+  padding: 3px;
+  font-family: "OpenSansRegular"; 
+}
 
-.App-link {
+.heading-font{
+  color: #ffffff;
+  font-size: calc(12px + 1vmin);
+  padding: 15px;
+  font-family: "OpenSansRegular";
+}
+
+.links-font{
+  color: #61dafb;
+  font-size: calc(8px + 1vmin);
+  padding: 15px;
+  font-family: "OpenSansItalic";
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+.align-left{
+  margin-right: auto;
+  padding: 15px;
+}
+
+/* pushes the element to the right, subsequent elements would follow suit */
+.align-right{
+  margin-left: auto;
+  padding: 15px;
+}
+
+.app-link {
   color: #61dafb;
 }
 
