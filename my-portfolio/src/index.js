@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/Open_Sans/static/OpenSans-Regular.ttf'
 import './fonts/Open_Sans/static/OpenSans_Condensed-Italic.ttf'

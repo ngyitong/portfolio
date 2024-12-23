@@ -1,0 +1,15 @@
+/*
+Renders the header
+*/
+.head {
+    background-color: #2b0203;
+    border-bottom: 2px solid #ffdbdb;
+    min-height: 10vh;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff9f9;
+  }
