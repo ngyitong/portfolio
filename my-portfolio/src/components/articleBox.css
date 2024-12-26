@@ -1,0 +1,32 @@
+.article-box1{
+    background-color: #2c0405;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    width: 95%;
+    opacity: 0.9;
+    padding: 4px 4px 4px 15px;
+    margin: 110px 20px 0px 20px;
+    writing-mode: horizontal-tb;
+    position: initial;
+    align-items: center;
+    color: #ccccf2;
+}
+  
+  
+.article-box2{
+    background-color: #2c0405;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #2c0405;
+    width: 95%;
+    opacity: 0.9;
+    padding: 4px 4px 4px 15px;
+    margin: 35px 20px 35px 20px;
+    position: initial;
+    align-items: start;
+    color: #ccccf2;
+}
+
+.pre-warp{
+    white-space: pre-wrap;
+}
+

@@ -55,6 +55,10 @@ renders the application background
   font-family: "OpenSansRegular";
 }
 
+.bold-text{
+  font-weight: bold;
+}
+
 .links-font{
   color: #61dafb;
   font-size: calc(8px + 1vmin);
@@ -77,33 +81,4 @@ renders the application background
 
 .app-link {
   color: #61dafb;
-}
-
-.article-box1{
-  background-color: #2c0405;
-  border-radius: 10px 10px 10px 10px;
-  display: flex;
-  width: 97%;
-  height: 90px;
-  opacity: 0.9;
-  padding: 5px;
-  margin: 110px 20px 0px 20px;
-  writing-mode: horizontal-tb;
-  display: flex;
-  position: initial;
-  align-items: center;
-}
-
-
-.article-box2{
-  background-color: #2c0405;
-  border-radius: 10px 10px 10px 10px;
-  width: 97%;
-  height: 90px;
-  opacity: 0.9;
-  padding: 5px;
-  margin: 40px 20px 40px 20px;
-  writing-mode: horizontal-tb;
-  position: initial;
-  align-items: center;
 }

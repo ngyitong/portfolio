@@ -16,7 +16,9 @@ function App() {
           <div>
 
             <Box1 />
-            <Box2 title="chichi" body="chocho"/>
+            <Box2 
+              title="chichi" body={'chocho .\n asdf .\n third line'}
+            />
             <Box2 />
 
 {/* TO-DO: Change to list */}
