@@ -2,7 +2,14 @@
   color: #61dafb;
 }
 
-/* create a new line if using flexbox*/
+
+/* 
+create a new line if using flexbox
+This specifies that flex-break should take up 100% of the width of the container
+The breaking flex item needs to sit on its own row, 
+and it is not able to share a row with other items, 
+so it has to break into a new line/row
+*/
 .flex-break{
   flex-basis: 100%;
 }
@@ -36,7 +43,7 @@ renders the application background
   display: flex;
   height: 100vh;
   width: 100%;
-  margin-top: -110px;
+  /* margin-top: -110px; */
   position: fixed;
   opacity: 0.4;
 }
@@ -50,30 +57,27 @@ renders the application background
 
 .heading-font{
   color: #ffffff;
-  font-size: calc(12px + 1vmin);
-  padding: 15px;
+  font-size: 1.2rem;
+  padding: 10px;
   font-family: "OpenSansRegular";
+  font-weight: bold;
 }
 
 .bold-text{
   font-weight: bold;
 }
 
-.links-font{
-  color: #61dafb;
-  font-size: calc(8px + 1vmin);
-  padding: 15px;
-  font-family: "OpenSansItalic";
-  font-style: italic;
-  text-decoration-line: underline;
-}
-
+/*
+pushes the element to the right, subsequent elements would follow suit
+*/
 .align-left{
   margin-right: auto;
   padding: 15px;
 }
 
-/* pushes the element to the right, subsequent elements would follow suit */
+/*
+pushes the element to the right, subsequent elements would follow suit
+*/
 .align-right{
   margin-left: auto;
   padding: 15px;

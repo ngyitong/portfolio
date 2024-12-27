@@ -6,30 +6,6 @@ function Foot(){
     return(
         <footer className="foot">
             <div className="flex-container-row">
-                <div className="heading-font">My Links</div>
-                <div className="flex-break"></div>
-
-                <a
-                    className="links-font"
-                    href="https://github.com/PlacidPlaty"
-                    // prevent new page from using JS to modify or redirect the original page
-                    rel="noopener noreferrer"
-                    // opens link in a new tab or window
-                    target="_blank"
-                    >
-                    GitHub
-                </a>
-
-                <a
-                    className="links-font"
-                    href="https://www.linkedin.com/in/ng-yi-tong/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >
-                    LinkedIn
-                </a>
-
-                <div className="flex-break"></div>
 
                 <div className="small-font">
                 Background photo by

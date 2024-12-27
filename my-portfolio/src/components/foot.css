@@ -5,9 +5,9 @@ Renders the footer
     background-color: #370304;
     border-top: 4px solid #ffdbdb;
     border-radius: 5px 5px 0px 0px;
-    padding: 5px;
+    padding: 4px 4px 4px 15px;
     width: 95%;
-    bottom: 0; left: 0; right: 0;
+    /* bottom: 0; left: 0; right: 0; */
     display: flex;
     justify-content: left;
     margin: 0 auto;
