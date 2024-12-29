@@ -1,3 +1,9 @@
+/**
+ * This is the main/home page
+ * Displays links to my socials, my education and experiences
+ * This main page will link to the projects page.
+ */
+
 import './App.css';
 import './global.css';
 import { Box1, Box2, Picture } from '../components/articleBox.js';
