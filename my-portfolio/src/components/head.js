@@ -10,8 +10,7 @@ function Head(){
                 <h3 className={ "heading-font align-left" }>Ng Yi Tong</h3>
                 {/* Things under align-right will be pushed to the right */}
                 <h3 className={ "heading-font align-right" }>Projects</h3>
-                <h3 className={ "heading-font" }>Projects2</h3>
-                <h3 className={ "heading-font" }>Projects3 </h3>
+
 
             </div>
         </header>

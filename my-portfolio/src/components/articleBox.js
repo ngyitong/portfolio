@@ -2,19 +2,26 @@ import '../pages/App.css'
 import './articleBox.css'
 import './displayData.js'
 import React from 'react';
+import myImage from '../pictures/picOfMe.jpeg';
 
 
 // Larger top margin size to avoid clashing with header
-export function Box1( { title, body }) {
+export function Box1( { title, body, links }) {
     return (
         <div className="article-box1">
             <p className="article-heading">
                 {title}
             </p>
             <div className="flex-break"></div>
-            <p className="pre-wrap links-font">
+
+            <p className="pre-wrap">
                 {body}
             </p>
+            <div className="flex-break"></div>
+
+            <text className="pre-wrap">
+                {links}
+            </text>
         </div>
     );
 
@@ -43,6 +50,11 @@ export function Box2( props ) {
     )
 }
 
-export function Picture( {pathToPic} ) {
+export function Picture() {
     // TO-DO
+    return(
+        <div className="article-box1 circular--portrait">
+            <img src={myImage} alt="My Profile Pic"></img>
+        </div>
+    )
 }
