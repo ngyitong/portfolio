@@ -1,5 +1,6 @@
 import '../pages/App.css'
 import './articleBox.css'
+import './displayData.js'
 import React from 'react';
 
 
@@ -19,20 +20,27 @@ export function Box1( { title, body }) {
 
 }
 
-// Small margin sizes
-export function Box2( { title, body } ) {
+/*
+List is passed into this function as a props. 
+use map function to display each element of a list in a new box
+*/
+export function Box2( props ) {
+    const articles = props.articles;
     return (
-        <div className="article-box2">
-            <p className="article-heading">
-                {title}
-            </p>
-            
-            <p className="pre-wrap article-font">
-                {body}
-            </p>
-
+        <div>
+    {/* ask if the list exists using "?" */}
+            {articles?.map((article) =>(
+                <div key={article.id} className="article-box2">
+                    <p className="article-heading">
+                        {article.title}
+                    </p>
+                    <p className="pre-wrap article-font">
+                        {article.body}
+                    </p>
+                </div>
+            ))}
         </div>
-    );
+    )
 }
 
 export function Picture( {pathToPic} ) {

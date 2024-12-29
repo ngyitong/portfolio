@@ -13,7 +13,7 @@
     /* center content hortizontally */
     align-items: start;
 }
-  
+
 
 .article-box2{
     background-color: rgba(44, 4, 5, 0.8);
@@ -33,7 +33,7 @@
 
 .article-heading{
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-family: "OpenSansRegular";
     font-weight: bold;
   }

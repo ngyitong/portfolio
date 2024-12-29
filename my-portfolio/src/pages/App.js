@@ -3,12 +3,14 @@ import './global.css';
 import { Box1, Box2 } from '../components/articleBox.js';
 import Head from '../components/head.js';
 import Foot from '../components/foot.js';
+import { getExperiences } from '../components/displayData.js';
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
 
 
 function App() {
-
+  const experiences = getExperiences();
+  
   return (
     
     <div className="app">
@@ -23,7 +25,7 @@ function App() {
                 //     I am a Computer Science student at SMU
                 //   </text>
                 // </div>
-                <div>
+                <>
 {/* 
                   Links to socials 
 */}
@@ -46,20 +48,13 @@ function App() {
                     >
                     LinkedIn <FaLinkedin size={24}/>
                   </a>
-                </div>}
+                </>}
               />
               <Box1 />
             </div>
-            <Box2 
-              title="Chichi" body={'chocho .\nasdf .\nthird line'}
-            />
-            <Box2 />
 
-{/* TO-DO: Change to list */}
-            {/* <Box1 />
-                {boxContent.map((content, index) => (
-                    <Box2 key={index} title={content.title} body={content.body} />
-                ))} */}
+{/* pass a list in for Box2 function to render */}
+            <Box2 articles={experiences}/>
 
           </div>
           <Foot />
