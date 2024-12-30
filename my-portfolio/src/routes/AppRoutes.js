@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import App from '../pages/App';
+import App from '../App';
 import ProjectsPage from '../pages/ProjectsPage';
-import head from '../components/head'
+import Head from '../components/NavBar'
 
 const AppRoutes = () => {
     <Router>
@@ -16,7 +16,7 @@ const AppRoutes = () => {
 
 const NavBarWrapper = () => {
     const location = useLocation();
-    return <head currentPath={location.pathname} />;
+    return <Head currentPath={location.pathname} />;
 };
 
 export default AppRoutes;

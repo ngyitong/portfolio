@@ -4,7 +4,7 @@
  */
 import './App.css';
 import './global.css';
-import Head from '../components/head.js';
+import Head from '../components/NavBar.js';
 import Foot from '../components/foot.js';
 
 

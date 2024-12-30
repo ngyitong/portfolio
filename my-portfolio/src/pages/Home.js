@@ -7,16 +7,16 @@
 import './App.css';
 import './global.css';
 import { Box1, Box2, Picture } from '../components/articleBox.js';
-import Head from '../components/head.js';
+import Head from '../components/NavBar.js';
 import Foot from '../components/foot.js';
 import { getExperiences } from '../components/displayData.js';
-// imports for icons
+// For importing of icons
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 
-function App() {
+function Home() {
   const experiences = getExperiences();
   
   return (
@@ -24,7 +24,6 @@ function App() {
     <div className="app">
 
       <section className="background">
-          <Head />
           <div>
             <div className="flex-container-row">
             <Box1 title="Ng Yi Tong" 
@@ -78,17 +77,30 @@ function App() {
 
 {/* pass a list in for Box2 function to render */}
             <Box2 articles={experiences}/>
+            <Box2 articles={experiences}/>
+            <Box2 articles={experiences}/>
 
           </div>
           <Foot />
+          <Head />
       </section>
 
     </div>
 
   );
+
+  // return (
+  //   <div className='app'>
+  //       <section className="background">
+  //           <Head />
+  //           <Foot />
+  //       </section>
+  //   </div>
+  // );
+
 }
 
-export default App;
+export default Home;
 
 // <div className="App">
 //   <header className="App-header">

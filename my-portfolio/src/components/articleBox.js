@@ -51,10 +51,14 @@ export function Box2( props ) {
 }
 
 export function Picture() {
-    // TO-DO
     return(
         <div className="article-box1 circular--portrait">
             <img src={myImage} alt="My Profile Pic"></img>
         </div>
     )
+}
+
+// Creates a line to divide different components
+export function HorizontalDividerLine() {
+    
 }

@@ -57,6 +57,9 @@
     font-style: italic;
 }
 
+/*
+The next 2 function is used to style images
+*/
 .circular--portrait{
     position: relative;
     width: 200px;
