@@ -62,7 +62,8 @@ export function Box2( props ) {
     )
 }
 
-export function ProjectBox() {
+
+export function ProjectBox( props ) {
 
     const [isZoomed, setIsZoomed] = useState(false);
 
@@ -71,29 +72,57 @@ export function ProjectBox() {
         setIsZoomed(shouldZoom)
     },[])
 
-    return (
-        <div className=" project-box ">
-            <p className="article-heading">
-                something
-            </p>
-            <p className="pre-wrap article-font">
-                project body
-                something else
-            </p>
-            {/* <div className="rectangular-picture">
-                <img src={cert} alt="My cert"></img>
-            </div> */}
-            <div className="rectangular-picture">
-                <ControlledZoom 
-                isZoomed = {isZoomed}
-                onZoomChange={handleZoomChange}
-                >
-                    <img src={cert} />
-                </ControlledZoom>
+    const projects = props.projects;
 
-            </div>
+    return (
+        <div>
+            {projects?.map((project) => (
+                <div key={project.id} className=" project-box ">
+                    <p className="article-heading">
+                        {project.title}
+                    </p>
+                    <p className="pre-wrap article-font">
+                        {project.body}
+                    </p>
+
+                    <div className="rectangular-picture">
+                        <ControlledZoom 
+                        isZoomed = {isZoomed}
+                        onZoomChange={handleZoomChange}
+                        >
+                            <img src={project.imagePath} />
+                        </ControlledZoom>
+
+                    </div>
+                </div>
+            ))}
 
         </div>
     );
+
+    // return (
+    //     <div className=" project-box ">
+    //         <p className="article-heading">
+    //             something
+    //         </p>
+    //         <p className="pre-wrap article-font">
+    //             project body
+    //             something else
+    //         </p>
+    //         {/* <div className="rectangular-picture">
+    //             <img src={cert} alt="My cert"></img>
+    //         </div> */}
+    //         <div className="rectangular-picture">
+    //             <ControlledZoom 
+    //             isZoomed = {isZoomed}
+    //             onZoomChange={handleZoomChange}
+    //             >
+    //                 <img src={cert} />
+    //             </ControlledZoom>
+
+    //         </div>
+
+    //     </div>
+    // );
 }
 

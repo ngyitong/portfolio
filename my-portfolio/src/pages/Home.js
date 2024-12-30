@@ -78,8 +78,6 @@ function Home() {
 
 {/* pass a list in for Box2 function to render */}
             <Box2 articles={experiences}/>
-            <Box2 articles={experiences}/>
-            <Box2 articles={experiences}/>
 
           </div>
           <Foot />
