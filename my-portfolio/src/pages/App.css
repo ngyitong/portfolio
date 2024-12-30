@@ -43,12 +43,12 @@ renders the application background
   height: 100vh;
   width: 100%;
   position: fixed;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .small-font{
   color: #ffffff;
-  font-size: calc(3px + 1vmin);
+  font-size: calc(6px + 0.9vmin);
   padding: 3px;
   font-family: "OpenSansRegular"; 
 }

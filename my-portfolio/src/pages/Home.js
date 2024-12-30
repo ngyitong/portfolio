@@ -7,7 +7,7 @@
 import './App.css';
 import './global.css';
 import { Box1, Box2, Picture } from '../components/articleBox.js';
-import Head from '../components/NavBar.js';
+import NavBar from '../components/NavBar.js';
 import Foot from '../components/foot.js';
 import { getExperiences } from '../components/displayData.js';
 // For importing of icons
@@ -25,6 +25,7 @@ function Home() {
 
       <section className="background">
           <div>
+        <NavBar />
             <div className="flex-container-row">
             <Box1 title="Ng Yi Tong" 
               body={
@@ -82,21 +83,11 @@ function Home() {
 
           </div>
           <Foot />
-          <Head />
       </section>
 
     </div>
 
   );
-
-  // return (
-  //   <div className='app'>
-  //       <section className="background">
-  //           <Head />
-  //           <Foot />
-  //       </section>
-  //   </div>
-  // );
 
 }
 

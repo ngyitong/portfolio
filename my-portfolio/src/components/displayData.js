@@ -3,6 +3,8 @@ For easy edit of static data
 Data will be in a list. 
 */
 
+
+
 export function getExperiences() {
     const experiences = [
     // id is added so that html does not complain when displaying the list

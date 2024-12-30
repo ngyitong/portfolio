@@ -7,8 +7,11 @@ Renders the header
     min-height: 10vh;
     width: 100%;
     top: 0; left: 0; right: 0;
+  /* set the z-order of a element. 
+  I set it at 1000 so that it would always be first */
+    z-index: 1000;
     display: flex;
-    position: fixed;
+    position: sticky; /* Dont use "fixed" */
     flex-direction: column;
     justify-content: space-between;
     color: #fff9f9;

@@ -4,7 +4,8 @@
  */
 import './App.css';
 import './global.css';
-import Head from '../components/NavBar.js';
+import NavBar from '../components/NavBar.js';
+import { Box1, Box2, ProjectBox } from '../components/articleBox.js'
 import Foot from '../components/foot.js';
 
 
@@ -12,7 +13,11 @@ function ProjectsPage() {
     return (
         <div className='app'>
             <section className="background">
-                <Head />
+                <NavBar />
+                    <div className="flex-container-row">
+                        <ProjectBox />
+
+                    </div>
                 <Foot />
             </section>
         </div>

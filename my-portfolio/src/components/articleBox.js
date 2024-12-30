@@ -1,11 +1,14 @@
 import '../pages/App.css'
 import './articleBox.css'
 import './displayData.js'
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import myImage from '../pictures/picOfMe.jpeg';
+import cert from '../pictures/Coursera-Google-cybersec-cert.png';
+// for zoomable images
+import { Controlled as ControlledZoom } from 'react-medium-image-zoom';
+import "react-medium-image-zoom/dist/styles.css";
 
 
-// Larger top margin size to avoid clashing with header
 export function Box1( { title, body, links }) {
     return (
         <div className="article-box1">
@@ -25,6 +28,15 @@ export function Box1( { title, body, links }) {
         </div>
     );
 
+}
+
+// Displays profile picture
+export function Picture() {
+    return(
+        <div className="article-box1 circular--portrait">
+            <img src={myImage} alt="My Profile Pic"></img>
+        </div>
+    )
 }
 
 /*
@@ -50,15 +62,38 @@ export function Box2( props ) {
     )
 }
 
-export function Picture() {
-    return(
-        <div className="article-box1 circular--portrait">
-            <img src={myImage} alt="My Profile Pic"></img>
+export function ProjectBox() {
+
+    const [isZoomed, setIsZoomed] = useState(false);
+
+    // set isZoomed to true
+    const handleZoomChange = useCallback(shouldZoom => {
+        setIsZoomed(shouldZoom)
+    },[])
+
+    return (
+        <div className=" project-box ">
+            <p className="article-heading">
+                something
+            </p>
+            <p className="pre-wrap article-font">
+                project body
+                something else
+            </p>
+            {/* <div className="rectangular-picture">
+                <img src={cert} alt="My cert"></img>
+            </div> */}
+            <div className="rectangular-picture">
+                <ControlledZoom 
+                isZoomed = {isZoomed}
+                onZoomChange={handleZoomChange}
+                >
+                    <img src={cert} />
+                </ControlledZoom>
+
+            </div>
+
         </div>
-    )
+    );
 }
 
-// Creates a line to divide different components
-export function HorizontalDividerLine() {
-    
-}
