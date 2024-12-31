@@ -3,7 +3,6 @@ import './articleBox.css'
 import './displayData.js'
 import React, { useCallback, useState } from 'react';
 import myImage from '../pictures/picOfMe.jpeg';
-import cert from '../pictures/Coursera-Google-cybersec-cert.png';
 // for zoomable images
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom';
 import "react-medium-image-zoom/dist/styles.css";
@@ -67,7 +66,7 @@ export function Box2( props ) {
  * Isolates the state for each project, 
  * so that the zoom effect does not affect multiple images simultaneously.
  */
-function SingleProjectBox( { project} ){
+function SingleBoxWithImage( { article } ){
     const [isZoomed, setIsZoomed] = useState(false);
 
     // set isZoomed to true
@@ -76,12 +75,12 @@ function SingleProjectBox( { project} ){
     },[]);
 
     return(
-        <div key={project.id} className=" project-box ">
+        <div>
             <p className="article-heading">
-                {project.title}
+                {article.title}
             </p>
             <p className="pre-wrap article-font">
-                {project.body}
+                {article.body}
             </p>
 
             <div className="rectangular-picture">
@@ -89,7 +88,7 @@ function SingleProjectBox( { project} ){
                 isZoomed = {isZoomed}
                 onZoomChange={handleZoomChange}
                 >
-                    <img src={project.imagePath} alt={"Image not available :("} />
+                    <img src={article.imagePath} alt={"not available :("} />
                 </ControlledZoom>
 
             </div>
@@ -102,15 +101,17 @@ function SingleProjectBox( { project} ){
  * maps the list of projects in displayData.js
  * into SingleProjectBox that renders the data in.
  */
-export function ProjectBox( props ) {
+export function BoxWithImage( props ) {
 
-
-    const projects = props.projects;
+    const articles = props.articles;
 
     return (
         <div>
-            {projects?.map((project) => (
-                <SingleProjectBox project={project} />
+            {articles?.map((article) => (
+                <div key={article.id} className=" project-box ">
+                    <SingleBoxWithImage article={article} />
+
+                </div>
             ))}
 
         </div>

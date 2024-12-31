@@ -4,10 +4,10 @@
  */
 
 
-import NavBar from './components/NavBar.js';
 import ProjectsPage from './pages/ProjectsPage.js';
 import Home from './pages/Home.js';
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import ExperiencesPage from './pages/ExperiencesPage.js';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
 const guide = createBrowserRouter([
@@ -15,7 +15,8 @@ const guide = createBrowserRouter([
     path: '/',
     children: [
       { path: "/", element: <Home />},
-      { path: "/projects", element: <ProjectsPage />}
+      { path: "/projects", element: <ProjectsPage />},
+      { path: "/experiences", element: <ExperiencesPage />}
     ]
   }
 ]);

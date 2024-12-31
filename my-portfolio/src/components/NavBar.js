@@ -11,12 +11,15 @@ function NavBar() {
             <div className="flex-container-row">
 
                 {/* Things under align-left will be pushed to the left */}
-                <Link to='/' className=" heading-font align-left ">
-                        Home
+                <Link to='/' className=" navbar-font align-left ">
+                    Home
                 </Link>
                 {/* Things under align-right will be pushed to the right */}
-                <Link to='/projects' className=" heading-font align-right ">
-                        Projects
+                <Link to='/experiences' className=' navbar-font align-right'>
+                    Experiences
+                </Link>
+                <Link to='/projects' className=" navbar-font ">
+                    Projects
                 </Link>
 
                 <Outlet />

@@ -53,10 +53,19 @@ renders the application background
   font-family: "OpenSansRegular"; 
 }
 
-.heading-font{
+.navbar-font{
   color: #ffffff;
   font-size: 1.2rem;
-  padding: 10px;
+  margin: 0.3em 1em 0.3em -0.2em;
+  font-family: "OpenSansRegular";
+  font-weight: bold;
+}
+
+/* for titles at the start of a  page*/
+.page-title-font{
+  color: #2b0203;
+  font-size: 2em;
+  margin: 20px 0px 0px 75px;
   font-family: "OpenSansRegular";
   font-weight: bold;
 }

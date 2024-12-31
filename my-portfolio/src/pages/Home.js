@@ -9,7 +9,7 @@ import './global.css';
 import { Box1, Box2, Picture } from '../components/articleBox.js';
 import NavBar from '../components/NavBar.js';
 import Foot from '../components/foot.js';
-import { getExperiences } from '../components/displayData.js';
+import { getHomepageInfo } from '../components/displayData.js';
 // For importing of icons
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
@@ -17,7 +17,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 
 function Home() {
-  const experiences = getExperiences();
+  const homepageInfo = getHomepageInfo();
   
   return (
     
@@ -31,7 +31,7 @@ function Home() {
               body={
                 <div>
                   <p className="article-font">
-                    Computer Science student at SMU
+                    I am a Computer Science student at SMU
                   </p>
                 </div>
               }
@@ -77,7 +77,7 @@ function Home() {
             </div>
 
 {/* pass a list in for Box2 function to render */}
-            <Box2 articles={experiences}/>
+            <Box2 articles={homepageInfo}/>
 
           </div>
           <Foot />

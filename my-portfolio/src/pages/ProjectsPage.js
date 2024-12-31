@@ -5,7 +5,7 @@
 import './App.css';
 import './global.css';
 import NavBar from '../components/NavBar.js';
-import { Box1, Box2, ProjectBox } from '../components/articleBox.js'
+import { BoxWithImage } from '../components/articleBox.js';
 import Foot from '../components/foot.js';
 import { getProjects } from '../components/displayData.js';
 
@@ -16,10 +16,13 @@ function ProjectsPage() {
         <div className='app'>
             <section className="background">
                 <NavBar />
-                    <div className="flex-container-row">
-                        <ProjectBox projects={projects}/>
+                <p className="page-title-font">
+                    Past Projects
+                </p>
+                <div className="flex-container-row">
+                    <BoxWithImage articles={projects}/>
 
-                    </div>
+                </div>
                 <Foot />
             </section>
         </div>
