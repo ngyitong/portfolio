@@ -63,66 +63,58 @@ export function Box2( props ) {
 }
 
 
-export function ProjectBox( props ) {
-
+/**
+ * Isolates the state for each project, 
+ * so that the zoom effect does not affect multiple images simultaneously.
+ */
+function SingleProjectBox( { project} ){
     const [isZoomed, setIsZoomed] = useState(false);
 
     // set isZoomed to true
     const handleZoomChange = useCallback(shouldZoom => {
         setIsZoomed(shouldZoom)
-    },[])
+    },[]);
+
+    return(
+        <div key={project.id} className=" project-box ">
+            <p className="article-heading">
+                {project.title}
+            </p>
+            <p className="pre-wrap article-font">
+                {project.body}
+            </p>
+
+            <div className="rectangular-picture">
+                <ControlledZoom 
+                isZoomed = {isZoomed}
+                onZoomChange={handleZoomChange}
+                >
+                    <img src={project.imagePath} alt={"Image not available :("} />
+                </ControlledZoom>
+
+            </div>
+        </div>
+
+    ); 
+}
+
+/**
+ * maps the list of projects in displayData.js
+ * into SingleProjectBox that renders the data in.
+ */
+export function ProjectBox( props ) {
+
 
     const projects = props.projects;
 
     return (
         <div>
             {projects?.map((project) => (
-                <div key={project.id} className=" project-box ">
-                    <p className="article-heading">
-                        {project.title}
-                    </p>
-                    <p className="pre-wrap article-font">
-                        {project.body}
-                    </p>
-
-                    <div className="rectangular-picture">
-                        <ControlledZoom 
-                        isZoomed = {isZoomed}
-                        onZoomChange={handleZoomChange}
-                        >
-                            <img src={project.imagePath} />
-                        </ControlledZoom>
-
-                    </div>
-                </div>
+                <SingleProjectBox project={project} />
             ))}
 
         </div>
     );
 
-    // return (
-    //     <div className=" project-box ">
-    //         <p className="article-heading">
-    //             something
-    //         </p>
-    //         <p className="pre-wrap article-font">
-    //             project body
-    //             something else
-    //         </p>
-    //         {/* <div className="rectangular-picture">
-    //             <img src={cert} alt="My cert"></img>
-    //         </div> */}
-    //         <div className="rectangular-picture">
-    //             <ControlledZoom 
-    //             isZoomed = {isZoomed}
-    //             onZoomChange={handleZoomChange}
-    //             >
-    //                 <img src={cert} />
-    //             </ControlledZoom>
-
-    //         </div>
-
-    //     </div>
-    // );
 }
 
