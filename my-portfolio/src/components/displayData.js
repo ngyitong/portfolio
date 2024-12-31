@@ -19,14 +19,32 @@ export function getHomepageInfo() {
             body: "I am a currently a Year 3 student at Singapore Management University, with a strong interest in Cybersecurity. " + 
             "\nI enjoy tackling the challenges of Cybersecurity, and " + 
             "I want to use these knowledge to protect people and organisations online. " 
-        },
-        {
-            id: '1',
-            title: "Education",
-            body: " <b> testing </b>"
         }
     ]
     return HomepageInfo;
+}
+
+export function getEducation() {
+/**
+ * To return information on my education
+ * REMEMBER TO have a space at the end of subTitles for better formatting
+ */
+    const Education = [
+        {
+            id: '0',
+            subTitle: 'Bachelor in Computer Science, ',
+            body: 'Singapore Management University',
+            dateStartEnd: '2022-present'
+        },
+        {
+            id: '1',
+            subTitle: 'Diploma in Chemical Engineering, ',
+            body: 'Temasek Polytechnic',
+            dateStartEnd: '2017-2020'
+        }
+    ]
+
+    return Education;
 }
 
 
@@ -38,8 +56,8 @@ export function getExperiences() {
     // id is added so that html does not complain when displaying the list
         {
             id: '0',
-            title: "My first experience",
-            body: "My explanation goes here"
+            title: "This protfolio webpage!",
+            body: "I created this webpage with reactjs. "
         },
         {
             id: '1',
@@ -58,9 +76,8 @@ export function getProjects() {
     // id is added so that html does not complain when displaying the list
         {
             id: '0',
-            title: "My first project",
-            body: "My explanation goes here",
-            imagePath: googleCert
+            title: "This protfolio webpage!",
+            body: "My explanation goes here"
         },
         {
             id: '1',

@@ -79,6 +79,16 @@
     content: '';
 }
 
+.line-above-text {
+    border-top: 2px solid #afafaf;
+    display: block;
+    position: inherit;
+    width: 99%;
+    padding: 5px 0px 0px 0px;
+    margin: 2em auto 2em auto;
+    content: '';
+}
+
 /*
 The next 2 function is used to style protrait images
 */

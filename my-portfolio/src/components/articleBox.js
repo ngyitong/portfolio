@@ -61,6 +61,32 @@ export function Box2( props ) {
     )
 }
 
+export function BoxWithLine( { title, articles } ) {
+
+    return(
+        <div>
+            <div className=" article-box2 ">
+                <p className=" article-heading ">
+                    {title}
+                </p>
+                {articles?.map((article) =>(
+                    <div key={article.id}>
+                        <p className=" pre-wrap article-font line-above-text">
+                            <span className="bold-text"> {article.subTitle}</span>
+                            {article.body}
+                            <span className="move-text-right">{article.dateStartEnd}</span>
+                        </p>
+                    </div>
+                ))}
+
+                {/* <p className=" pre-wrap article-font line-above-text">
+                    <span className="bold-text"> aomething </span> another
+                </p> */}
+            </div>
+        </div>
+    );
+}
+
 
 /**
  * Isolates the state for each project, 

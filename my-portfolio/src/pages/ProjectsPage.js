@@ -17,7 +17,7 @@ function ProjectsPage() {
             <section className="background">
                 <NavBar />
                 <p className="page-title-font">
-                    Past Projects
+                    Projects
                 </p>
                 <div className="flex-container-row">
                     <BoxWithImage articles={projects}/>

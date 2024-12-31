@@ -6,10 +6,10 @@
 
 import './App.css';
 import './global.css';
-import { Box1, Box2, Picture } from '../components/articleBox.js';
+import { Box1, Box2, Picture, BoxWithLine } from '../components/articleBox.js';
 import NavBar from '../components/NavBar.js';
 import Foot from '../components/foot.js';
-import { getHomepageInfo } from '../components/displayData.js';
+import { getHomepageInfo, getEducation } from '../components/displayData.js';
 // For importing of icons
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
@@ -18,6 +18,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 function Home() {
   const homepageInfo = getHomepageInfo();
+  const education = getEducation();
   
   return (
     
@@ -78,6 +79,7 @@ function Home() {
 
 {/* pass a list in for Box2 function to render */}
             <Box2 articles={homepageInfo}/>
+            <BoxWithLine title="Education" articles={education}/>
 
           </div>
           <Foot />
