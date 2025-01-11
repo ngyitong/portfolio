@@ -18,7 +18,7 @@ export function getHomepageInfo() {
             title: "About",
             body: "I am a currently a Year 3 student at Singapore Management University, with a strong interest in Cybersecurity. " + 
             "\nI enjoy tackling the challenges of Cybersecurity, and " + 
-            "I want to use these knowledge to protect people and organisations online. " 
+            "I want to use these knowledge to protect people and organisations online." 
         }
     ]
     return HomepageInfo;
@@ -56,8 +56,8 @@ export function getExperiences() {
     // id is added so that html does not complain when displaying the list
         {
             id: '0',
-            title: "This protfolio webpage!",
-            body: "I created this webpage with reactjs. "
+            title: "My first experience",
+            body: "My explanation goes here 2. "
         },
         {
             id: '1',
@@ -77,7 +77,8 @@ export function getProjects() {
         {
             id: '0',
             title: "This protfolio webpage!",
-            body: "My explanation goes here"
+            body: "I created this webpage with the goal of learning more about frontend and ReactJS. " +
+                  "I employed external CSS to style each components and for better code reusability. "
         },
         {
             id: '1',
