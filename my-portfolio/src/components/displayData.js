@@ -3,7 +3,7 @@ For easy edit of static data
 Data will be in a list. 
 */
 
-import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
+// import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
 import brainhackCert from '../pictures/brainhack-2024.png';
 
 
