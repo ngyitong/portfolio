@@ -18,7 +18,7 @@ export function getHomepageInfo() {
             title: "About",
             body: "I am a currently a Year 3 student at Singapore Management University, with a strong interest in Cybersecurity. " + 
             "\nI enjoy tackling the challenges of Cybersecurity, and " + 
-            "I want to use these knowledge to protect people and organisations online." 
+            "I want to use these knowledge to protect people and organisations online. " 
         }
     ]
     return HomepageInfo;
