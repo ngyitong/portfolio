@@ -14,7 +14,7 @@ const guide = createBrowserRouter([
   {
     path: '/',
     children: [
-      { path: "/", element: <Home />},
+      { path: "/portfolio", element: <Home />},
       { path: "/projects", element: <ProjectsPage />},
       { path: "/experiences", element: <ExperiencesPage />}
     ]

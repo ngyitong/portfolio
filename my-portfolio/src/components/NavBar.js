@@ -11,7 +11,7 @@ function NavBar() {
             <div className="flex-container-row">
 
                 {/* Things under align-left will be pushed to the left */}
-                <Link to='/' className=" navbar-font align-left ">
+                <Link to='/portfolio' className=" navbar-font align-left ">
                     Home
                 </Link>
                 {/* Things under align-right will be pushed to the right */}
