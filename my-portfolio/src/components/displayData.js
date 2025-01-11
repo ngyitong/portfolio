@@ -82,7 +82,7 @@ export function getProjects() {
     // id is added so that html does not complain when displaying the list
         {
             id: '0',
-            title: "This protfolio webpage!",
+            title: "This porfolio page!",
             body: "I created this webpage with the goal of learning more about frontend and ReactJS. " +
                   "I employed external CSS to style each components and for better code reusability. "
         },
