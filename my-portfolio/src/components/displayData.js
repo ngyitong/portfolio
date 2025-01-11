@@ -3,7 +3,7 @@ For easy edit of static data
 Data will be in a list. 
 */
 
-// import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
+import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
 import brainhackCert from '../pictures/brainhack-2024.png';
 
 
@@ -17,8 +17,8 @@ export function getHomepageInfo() {
             id: '0',
             title: "About",
             body: "I am a currently a Year 3 student at Singapore Management University, with a strong interest in Cybersecurity. " + 
-            "\nI enjoy tackling the challenges of Cybersecurity, and " + 
-            "I want to use these knowledge to protect people and organisations online. " 
+            "\nI enjoy tackling challenges in the field and am motivated by the goal of protecting others online. " + 
+            "I want to make a meaningful impact for the security our digital world. " 
         }
     ]
     return HomepageInfo;
@@ -56,13 +56,19 @@ export function getExperiences() {
     // id is added so that html does not complain when displaying the list
         {
             id: '0',
-            title: "My first experience",
-            body: "My explanation goes here 2. "
+            title: "Coursera Google Cybersecurity Professional Certificate",
+            body: "This certificate introduced me to the fundamentals of cybersecurity. " + 
+                    "I learnt about the different tools used by cybersecurity professionals to prevent, detect and respond to cyber attacks. " +
+                    "This course also taught me how a company can identify, manage and respond to cyberseucity risks. " + 
+                    "Additionally, I was given hands on experience with tools such as Wireshark, tcpdump and VirusTotal." + 
+                    "My completion of this course has provided me with a better appreciation of the importance of cybersecurity and the motivation to learn more about the different fields in cybersecurity.",
+            imagePath: googleCert
         },
         {
             id: '1',
-            title: "My second experience",
-            body: "My explanation goes here 2"
+            title: "DSTA Brainhack 2024",
+            body: "I participated in the Brainhack cybersecurity hackathon, with a team of 4. ",
+            imagePath: brainhackCert
         }
     ]
     return experiences;
@@ -83,8 +89,7 @@ export function getProjects() {
         {
             id: '1',
             title: "My second project",
-            body: "My explanation goes here 2",
-            imagePath: brainhackCert
+            body: "My explanation goes here 2"
         }
     ]
 
