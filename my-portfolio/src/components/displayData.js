@@ -72,7 +72,7 @@ export function getExperiences() {
             title: "DSTA Brainhack 2024",
             body: "I participated in the Brainhack cybersecurity hackathon with a team of 4. " +
                   "This hackathon presented numerous challenges which helped me to develop my techinical skills, " + 
-                  "espcially in network security and linux commands. ",
+                  "espcially in network security and linux commands.",
             imagePath: brainhackCert
         }
     ]
