@@ -51,6 +51,31 @@ export function getEducation() {
     return Education;
 }
 
+export function getSkills() {
+    /**
+     * To return information on my techinical skills
+     */
+    const Skills = [
+        {
+            id: '0',
+            subTitle: 'Programming Languages: ',
+            body: "C, Java, Python, SQL"
+        },
+        {
+            id: '1',
+            subTitle: 'Frameworks: ',
+            body: "Spring boot, FastAPI, React"
+        },
+        {
+            id: '2',
+            subTitle: 'Tools: ',
+            body: "Github, Docker, Wireshark, Kali Linux"
+        }
+    ]
+
+    return Skills;
+}
+
 
 /**
  * Data for Experiences page

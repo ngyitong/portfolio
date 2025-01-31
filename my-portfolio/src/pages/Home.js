@@ -9,7 +9,7 @@ import './global.css';
 import { Box1, Box2, Picture, BoxWithLine } from '../components/articleBox.js';
 import NavBar from '../components/NavBar.js';
 import Foot from '../components/foot.js';
-import { getHomepageInfo, getEducation } from '../components/displayData.js';
+import { getHomepageInfo, getEducation, getSkills } from '../components/displayData.js';
 // For importing of icons
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa6";
@@ -19,6 +19,7 @@ import { MdOutlineEmail } from "react-icons/md";
 function Home() {
   const homepageInfo = getHomepageInfo();
   const education = getEducation();
+  const skills = getSkills();
   
   return (
     
@@ -80,6 +81,7 @@ function Home() {
 {/* pass a list in for Box2 function to render */}
             <Box2 articles={homepageInfo}/>
             <BoxWithLine title="Education" articles={education}/>
+            <BoxWithLine title="Skills" articles={skills}/>
 
           </div>
           <Foot />
@@ -92,22 +94,3 @@ function Home() {
 }
 
 export default Home;
-
-// <div className="App">
-//   <header className="App-header">
-//     <img src={logo} className="App-logo" alt="logo" />
-//     <p>
-//       Edit <code>src/App.js</code> and save to reload?
-//     </p>
-
-//     {/* create a hyperlink */}
-//     <a
-//       className="App-link"
-//       href="https://reactjs.org"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Learn React
-//     </a>
-//   </header>
-// </div>
