@@ -5,8 +5,9 @@ Data will be in a list.
 
 import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
 import brainhackCert from '../pictures/brainhack-2024.png';
-// import cs440ProjectPic1 from "../pictures/cs440-project-pic1.jpeg";
 import cs440ProjectPic2 from "../pictures/cs440-project-pic2.png";
+import cs302pic from "../pictures/cs302-microservice.png";
+import whitehatcert from "../pictures/whitehat-hacking-fundamentals-cert.pdf"
 
 
 
@@ -62,6 +63,7 @@ export function getExperiences() {
             title: "Coursera Google Cybersecurity Professional Certificate",
             body: "This certificate introduced me to the fundamentals of cybersecurity. " + 
                     "I learnt about the different tools used by cybersecurity professionals to prevent, detect and respond to cyber attacks. " +
+                    "I was introduced to SIEM tools such as Splunk and Chronicle, and learnt the theory behind IDS/IPS, Firewalls and access control. " +
                     "This course also taught me how a company can identify, manage and respond to cyberseucity risks. " + 
                     "Additionally, I was given hands on experience with tools such as Wireshark, tcpdump and VirusTotal. " + 
                     "My completion of this course has provided me with a better appreciation of the importance of cybersecurity and the motivation to learn more about the different fields in cybersecurity. ",
@@ -74,6 +76,12 @@ export function getExperiences() {
                   "This hackathon presented numerous challenges which helped me to develop my techinical skills, " + 
                   "espcially in network security and linux commands. ",
             imagePath: brainhackCert
+        },
+        {
+            id: '2',
+            title: "Whitehat Cybersecurity Capture the Flag",
+            body: "",
+            imagePath: whitehatcert
         }
     ]
     return experiences;
@@ -103,6 +111,17 @@ export function getProjects() {
                   "Using webhook, it would send the decryption key to our server via hybrid encryption. " + 
                   "Through this project, I was able to gain a better understanding of how ransomware works through the perspective of an attacker. ",
             imagePath: cs440ProjectPic2
+        },
+        {
+            id: '2',
+            title: "IT Solution Lifecycle Management (University Project)",
+            body: "I collaborated with a team of 5 to using GitLabs create a microservice application that keeps track of brand instruments. " +
+                  "This university project provided me with hands-on experience in planning and developing a microservice application. " +
+                  "I learnt and employed DevOps practices such as CI/CD, Docker and Infrastructure as Code. " +
+                  "I was responsible for developing and writing unit tests for the microservice that kept track of the brand instruments. " +
+                  "The backend services were with AWS Lambda and I also helped develop the landing page for the application. " + 
+                  "This project was vital in my understanding of microservice architecture and DevOps practices. ",
+            imagePath: cs302pic
         }
     ]
 
