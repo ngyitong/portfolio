@@ -7,7 +7,7 @@ import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
 import brainhackCert from '../pictures/brainhack-2024.png';
 import cs440ProjectPic2 from "../pictures/cs440-project-pic2.png";
 import cs302pic from "../pictures/cs302-microservice.png";
-import whitehatcert from "../pictures/whitehat-hacking-fundamentals-cert.pdf"
+import whitehatcert from "../pictures/whitehat-hacking-fundamentals-cert.png"
 
 
 
@@ -80,7 +80,10 @@ export function getExperiences() {
         {
             id: '2',
             title: "Whitehat Cybersecurity Capture the Flag",
-            body: "",
+            body: "I attended a cybersecurity Capture the Flag event organised by a club in my university. " +
+                  "Where I was introduced to numerous tools and techniques, such as Kali Linux, Linux commands, OSINT, Cryptography and Web Exploitation." +
+                  "Over the course of 5 weeks, we were also given challenges to solve, which reinforced the techinical skills that I had learnt. " + 
+                  "This introductory CTF was a lot of fun and I was placed top 20 in the competition. ",
             imagePath: whitehatcert
         }
     ]
