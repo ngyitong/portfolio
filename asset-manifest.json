@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.571b2ddb.css",
-    "main.js": "/portfolio/static/js/main.fab85a05.js",
+    "main.js": "/portfolio/static/js/main.8a76ee0a.js",
     "static/media/brainhack-2024.png": "/portfolio/static/media/brainhack-2024.285a6c682111a6dc8913.png",
     "static/media/Coursera-Google-cybersec-cert.png": "/portfolio/static/media/Coursera-Google-cybersec-cert.d6a27066a7930b84ff34.png",
-    "static/media/whitehat-hacking-fundamentals-cert.pdf": "/portfolio/static/media/whitehat-hacking-fundamentals-cert.ba93cb82ca886332990f.pdf",
+    "static/media/whitehat-hacking-fundamentals-cert.png": "/portfolio/static/media/whitehat-hacking-fundamentals-cert.4f6d2d147558326e39f4.png",
     "static/media/landscape.jpg": "/portfolio/static/media/landscape.738d8ca7e08891447bff.jpg",
     "static/media/cs302-microservice.png": "/portfolio/static/media/cs302-microservice.316fc0e0a424f8973ac7.png",
     "static/media/picOfMe.jpeg": "/portfolio/static/media/picOfMe.79f432e6cecdaee60636.jpeg",
@@ -13,10 +13,10 @@
     "static/media/cs440-project-pic2.png": "/portfolio/static/media/cs440-project-pic2.ad322b19c186ed3e66db.png",
     "index.html": "/portfolio/index.html",
     "main.571b2ddb.css.map": "/portfolio/static/css/main.571b2ddb.css.map",
-    "main.fab85a05.js.map": "/portfolio/static/js/main.fab85a05.js.map"
+    "main.8a76ee0a.js.map": "/portfolio/static/js/main.8a76ee0a.js.map"
   },
   "entrypoints": [
     "static/css/main.571b2ddb.css",
-    "static/js/main.fab85a05.js"
+    "static/js/main.8a76ee0a.js"
   ]
 }
