@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.571b2ddb.css",
+    "main.js": "/portfolio/static/js/main.0d8ccf75.js",
+    "static/media/brainhack-2024.png": "/portfolio/static/media/brainhack-2024.285a6c682111a6dc8913.png",
+    "static/media/Coursera-Google-cybersec-cert.png": "/portfolio/static/media/Coursera-Google-cybersec-cert.d6a27066a7930b84ff34.png",
+    "static/media/landscape.jpg": "/portfolio/static/media/landscape.738d8ca7e08891447bff.jpg",
+    "static/media/picOfMe.jpeg": "/portfolio/static/media/picOfMe.79f432e6cecdaee60636.jpeg",
+    "static/media/OpenSans_Condensed-Italic.ttf": "/portfolio/static/media/OpenSans_Condensed-Italic.2f3d3e4fff6359830c76.ttf",
+    "static/media/OpenSans-Regular.ttf": "/portfolio/static/media/OpenSans-Regular.b8cc747a58ffa52b7ff9.ttf",
+    "static/media/cs440-project-pic2.png": "/portfolio/static/media/cs440-project-pic2.ad322b19c186ed3e66db.png",
+    "index.html": "/portfolio/index.html",
+    "main.571b2ddb.css.map": "/portfolio/static/css/main.571b2ddb.css.map",
+    "main.0d8ccf75.js.map": "/portfolio/static/js/main.0d8ccf75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.571b2ddb.css",
+    "static/js/main.0d8ccf75.js"
+  ]
+}
