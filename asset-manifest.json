@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.571b2ddb.css",
-    "main.js": "/portfolio/static/js/main.8a76ee0a.js",
+    "main.js": "/portfolio/static/js/main.c7793c8c.js",
     "static/media/brainhack-2024.png": "/portfolio/static/media/brainhack-2024.285a6c682111a6dc8913.png",
     "static/media/Coursera-Google-cybersec-cert.png": "/portfolio/static/media/Coursera-Google-cybersec-cert.d6a27066a7930b84ff34.png",
     "static/media/whitehat-hacking-fundamentals-cert.png": "/portfolio/static/media/whitehat-hacking-fundamentals-cert.4f6d2d147558326e39f4.png",
@@ -13,10 +13,10 @@
     "static/media/cs440-project-pic2.png": "/portfolio/static/media/cs440-project-pic2.ad322b19c186ed3e66db.png",
     "index.html": "/portfolio/index.html",
     "main.571b2ddb.css.map": "/portfolio/static/css/main.571b2ddb.css.map",
-    "main.8a76ee0a.js.map": "/portfolio/static/js/main.8a76ee0a.js.map"
+    "main.c7793c8c.js.map": "/portfolio/static/js/main.c7793c8c.js.map"
   },
   "entrypoints": [
     "static/css/main.571b2ddb.css",
-    "static/js/main.8a76ee0a.js"
+    "static/js/main.c7793c8c.js"
   ]
 }
