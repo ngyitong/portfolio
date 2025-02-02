@@ -13,10 +13,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const guide = createBrowserRouter([
   {
     path: '/',
+    element: <Outlet />,
     children: [
-      { path: "/portfolio", element: <Home />},
-      { path: "/projects", element: <ProjectsPage />},
-      { path: "/experiences", element: <ExperiencesPage />}
+      // { path: "/portfolio", element: <Home />},
+      { index: true, element: <Home /> },
+      { path: "projects", element: <ProjectsPage />},
+      { path: "experiences", element: <ExperiencesPage />}
     ]
   }
 ], { basename: "/portfolio/" });
