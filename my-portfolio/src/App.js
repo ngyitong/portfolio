@@ -7,21 +7,19 @@
 import ProjectsPage from './pages/ProjectsPage.js';
 import Home from './pages/Home.js';
 import ExperiencesPage from './pages/ExperiencesPage.js';
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
 const guide = createBrowserRouter([
   {
     path: '/',
-    element: <Outlet />,
     children: [
-      // { path: "/portfolio", element: <Home />},
-      { index: true, element: <Home /> },
+      { path: "/portfolio", element: <Home />},
       { path: "projects", element: <ProjectsPage />},
       { path: "experiences", element: <ExperiencesPage />}
     ]
   }
-], { basename: "/portfolio/" });
+]);
 
 function App() {
   
