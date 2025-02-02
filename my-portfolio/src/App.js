@@ -19,7 +19,7 @@ const guide = createBrowserRouter([
       { path: "/experiences", element: <ExperiencesPage />}
     ]
   }
-]);
+], { basename: "/portfolio/" });
 
 function App() {
   

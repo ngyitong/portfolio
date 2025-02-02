@@ -3,6 +3,12 @@ For easy edit of static data
 Data will be in a list. 
 */
 
+/**
+ * TO UPDATE THE WEBSITE:
+ * 1. After pushing to github on the gh-pages branch
+ * 2. Run the command: npm run deploy (else the page will fail to load)
+ */
+
 import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
 import brainhackCert from '../pictures/brainhack-2024.png';
 import cs440ProjectPic2 from "../pictures/cs440-project-pic2.png";
