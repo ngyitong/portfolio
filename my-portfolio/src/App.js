@@ -7,7 +7,7 @@
 import ProjectsPage from './pages/ProjectsPage.js';
 import Home from './pages/Home.js';
 import ExperiencesPage from './pages/ExperiencesPage.js';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 
 const guide = createBrowserRouter([
