@@ -43,7 +43,7 @@ function Home() {
                 <div>
                   <a
                     className="links-font"
-                    href="https://github.com/PlacidPlaty"
+                    href="https://github.com/ngyitong"
                     // prevent new page from using JS to modify or redirect the original page
                     rel="noopener noreferrer"
                     // opens link in a new tab or window
