@@ -114,7 +114,7 @@ function SingleBoxWithImage( { article } ){
                 isZoomed = {isZoomed}
                 onZoomChange={handleZoomChange}
                 >
-                    <img src={article.imagePath} alt={"not available :("} />
+                    <img src={article.imagePath} alt={"No image available"} />
                 </ControlledZoom>
 
             </div>

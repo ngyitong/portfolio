@@ -4,6 +4,11 @@ Data will be in a list.
 */
 
 /**
+ * TO RUN ON LOCALHOST FOR TESTING:
+ * `npm start .`
+ */
+
+/**
  * TO UPDATE THE WEBSITE:
  * 1. After pushing to github on the gh-pages branch
  * 2. Run the command: npm run deploy (else the page will fail to load)
@@ -14,6 +19,7 @@ import brainhackCert from '../pictures/brainhack-2024.png';
 import cs440ProjectPic2 from "../pictures/cs440-project-pic2.png";
 import cs302pic from "../pictures/cs302-microservice.png";
 import whitehatcert from "../pictures/whitehat-hacking-fundamentals-cert.png"
+import internship_pic from "../pictures/internship_pic.png"
 
 
 
@@ -26,9 +32,9 @@ export function getHomepageInfo() {
         {
             id: '0',
             title: "About",
-            body: "I am a currently a Year 3 student at Singapore Management University, with a strong interest in Cybersecurity. " + 
+            body: "I am a currently a Final student at Singapore Management University, with a strong interest in Cybersecurity. " + 
             "\nI enjoy tackling challenges in the field and am motivated by the goal of protecting others online. " + 
-            "I want to make a meaningful impact for the security our digital world. " 
+            "I want to make a meaningful impact for the security of our digital world. " 
         }
     ]
     return HomepageInfo;
@@ -90,7 +96,23 @@ export function getExperiences() {
     const experiences = [
     // id is added so that html does not complain when displaying the list
         {
-            id: '0',
+            id: '3',
+            title: "Student Internship at Singhealth Health Services Research Centre",
+            body: "During my six month research internship at the SingHealth Health Services Research Centre (HSRC)," +
+                    " I supported a major clinical grant initiative aimed at improving the Chain of Survival for " +
+                    "Out-of-Hospital Cardiac Arrest (OHCA) patients. Working under the guidance of Deputy Director Lam Shao Wei Sean, " +
+                    "my work specifically focused on addressing the future projected distribution of OHCA incidence, " +
+                    "to evaluate the feasibility of AED-equipped first responders. \n\nTo ensure methodological integrity, " +
+                    "I conducted literature reviews to learn from existing research, followed best practices and proven research methodologies that best fits Singapore’s geography and demography. " +
+                    "On the technical front, I engineered data-processing pipelines using Python scripts and SQL queries to clean and integrate massive, " +
+                    "unstructured healthcare datasets with spatial demographics from public sources. Utilising tools like QGIS, " +
+                    "I transformed geospatial data into structured data and combined it with healthcare data. " +
+                    "Accounting for crucial demographic shifts such as Singapore's aging population and the development of new residential communities, " +
+                    "I trained a prediction model to project OHCA hotspots across Singapore through 2040.",
+            imagePath: internship_pic
+        },
+        {
+            id: '2',
             title: "Coursera Google Cybersecurity Professional Certificate",
             body: "This certificate introduced me to the fundamentals of cybersecurity. " + 
                     "I learnt about the different tools used by cybersecurity professionals to prevent, detect and respond to cyber attacks. " +
@@ -109,7 +131,7 @@ export function getExperiences() {
             imagePath: brainhackCert
         },
         {
-            id: '2',
+            id: '0',
             title: "Whitehat Cybersecurity Capture the Flag",
             body: "I attended a cybersecurity Capture the Flag event organised by a club in my university. " +
                   "Where I was introduced to numerous tools and techniques, such as Kali Linux, Linux commands, OSINT, Cryptography and Web Exploitation." +
