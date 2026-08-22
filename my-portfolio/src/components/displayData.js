@@ -11,7 +11,7 @@ Data will be in a list.
 /**
  * TO UPDATE THE WEBSITE:
  * 1. After pushing to github on the gh-pages branch
- * 2. Run the command: npm run deploy (else the page will fail to load)
+ * 2. Run the command within "my-portfolio" directory: npm run deploy (else the page will fail to load)
  */
 
 import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';
