@@ -7,14 +7,15 @@
 import ProjectsPage from './pages/ProjectsPage.js';
 import Home from './pages/Home.js';
 import ExperiencesPage from './pages/ExperiencesPage.js';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 
-const guide = createBrowserRouter([
+const guide = createHashRouter([
   {
     path: '/',
     children: [
-      { path: "/portfolio", element: <Home />},
+      // { path: "/portfolio", element: <Home />},
+      { index:true , element: <Home />},
       { path: "projects", element: <ProjectsPage />},
       { path: "experiences", element: <ExperiencesPage />}
     ]

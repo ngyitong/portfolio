@@ -10,7 +10,7 @@ Data will be in a list.
 
 /**
  * TO UPDATE THE WEBSITE:
- * 1. After pushing to github on the gh-pages branch
+ * 1. After pushing to github on the gh-pages-2 branch
  * 2. Run the command: npm run deploy (else the page will fail to load)
  */
 
@@ -97,7 +97,7 @@ export function getExperiences() {
     // id is added so that html does not complain when displaying the list
         {
             id: '3',
-            title: "testing testing Student Internship at Singhealth Health Services Research Centre",
+            title: "Student Internship at Singhealth Health Services Research Centre",
             body: "During my six month research internship at the SingHealth Health Services Research Centre (HSRC)," +
                     " I supported a major clinical grant initiative aimed at improving the Chain of Survival for " +
                     "Out-of-Hospital Cardiac Arrest (OHCA) patients. Working under the guidance of Deputy Director Lam Shao Wei Sean, " +
