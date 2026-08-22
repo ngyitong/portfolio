@@ -12,6 +12,7 @@ Data will be in a list.
  * TO UPDATE THE WEBSITE:
  * 1. After pushing to github on the gh-pages-2 branch
  * 2. Run the command: npm run deploy (else the page will fail to load)
+ * DONT HAVE TO TOUCH gh-pages branch
  */
 
 import googleCert from '../pictures/Coursera-Google-cybersec-cert.png';

@@ -14,7 +14,6 @@ const guide = createHashRouter([
   {
     path: '/',
     children: [
-      // { path: "/portfolio", element: <Home />},
       { index:true , element: <Home />},
       { path: "projects", element: <ProjectsPage />},
       { path: "experiences", element: <ExperiencesPage />}

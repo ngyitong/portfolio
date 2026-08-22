@@ -1,5 +1,5 @@
-# Use the gh-pages-live git branch for the actual portfolio page
-# gh-pages-2 will be used to update and test things. Run npm run deploy from gh-pages-2 and gh-pages-live will update automatically
+# Use the gh-pages git branch for the actual portfolio page
+# gh-pages-2 will be used to update and test things. Run npm run deploy from gh-pages-2 and gh-pages will update automatically. DONT HAVE TO TOUCH gh-pages
 # main branch is used for back up
 
 # Getting Started with Create React App
