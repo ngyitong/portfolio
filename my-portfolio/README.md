@@ -1,3 +1,7 @@
+# Use the gh-pages-live git branch for the actual portfolio page
+# gh-pages-2 will be used to update and test things
+# main branch is used for back up
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
